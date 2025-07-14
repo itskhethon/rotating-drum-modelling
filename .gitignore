@@ -1,0 +1,8 @@
+*.asv
+*.fig
+*.mat
+*.mex*
+*.mdl
+*.slx
+*.autosave
+.DS_Store
