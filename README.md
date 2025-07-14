@@ -1,48 +1,32 @@
 # Rotating Drum Granular Flow Modelling
 
-This MATLAB project models a classic granular flow in a rotating drum using depth-integrated ODEs. It is based Process Modelling & Optimisation (One of the chemical engineering module I took during undergrad at UKZN) The system models mass efflux, flowing layer depth, and the free surface using numerical integration.
+This MATLAB project simulates granular flow in a horizontally rotating drum using a system of depth-integrated ordinary differential equations (ODEs). It was developed as part of the *Process Modelling & Optimisation* module during my undergraduate Chemical Engineering studies at the University of KwaZulu-Natal (UKZN).
+
+The model captures key physical phenomena such as mass efflux, flowing layer depth, and the shape of the free surface using numerical methods.
 
 ---
 
 ##  Problem Description
 
-The goal is to simulate granular flow within a horizontally rotating drum using:
-- Shallow flow approximation
-- Mass conservation laws
-- Depth-averaged momentum and energy equations
+The aim of the simulation is to predict granular flow behavior in a rotating drum by applying:
 
-The numerical solution gives us:
-- Mass efflux `q(x)`
-- Flowing layer depth `h(x)`
-- Free surface height `z(x)`
-**see the files for more details*
+- **Shallow flow approximations**
+- **Mass conservation principles**
+- **Depth-averaged momentum and energy balances**
+
+The numerical solution yields spatial profiles of:
+
+- **Mass efflux** `q(x)`
+- **Flowing layer depth** `h(x)`
+- **Free surface elevation** `z(x)`
+
+*Refer to the included files for mathematical formulation and detailed implementation.*
+
 ---
 
-##  How to Run (in MATLAB)
+##  How to Run the Code (MATLAB)
 
-1. Open MATLAB
-2. Navigate to the `/code/` folder:
+1. Open MATLAB.
+2. Navigate to the `code/` directory:
    ```matlab
    cd('path/to/code/')
-3. run('solver.m')
-5. View the generated plots:
--Mass Efflux vs Length
--Flowing Layer Depth vs Length
--Free Surface vs Length
-
-5. MATLAB Files
-   
-File	Description
-ODEsfun.m	MATLAB function with system of ODEs
-solver.m	Main script that solves the ODEs and plots
-.gitignore	Ignores MATLAB temp and output files
-This repository includes the original assignment PDF and my own submitted solution
-
-
-## Author
-
-Khethukuthula Ngcobo
-
-## License
-
-This repository is for academic and portfolio use only. Original brief © UKZN.
